@@ -12,7 +12,7 @@ const MEMORIES = [
   { id: 1, url: "/image/04.jpeg", caption: "น่ารักที่สุดดด 🥰", rotate: -2 },
   { id: 2, url: "/image/03.jpeg", caption: "หนังเรื่องนี้ที่ดูด้วยกัน 🍿", rotate: 3 },
   { id: 3, url: "/image/02.jpeg", caption: "เกาะสีชังวันนั้น.. 🌊", rotate: -3 },
-  { id: 4, url: "/image/01.jpeg", caption: "วาเลนไทน์แรกของเรา 🌹", rotate: 2 },
+  { id: 4, url: "/image/01.jpeg", caption: "วาเลนไทน์ของเรา 🌹", rotate: 2 },
   { id: 5, url: "/image/06.jpeg", caption: "ดรีมเวิลด์ด้วยกัน ", rotate: -2 },
   { id: 6, url: "/image/07.jpeg", caption: "พาอ้วนร่องเรือวันครบรอนและคริสมาส 🌹", rotate: 3 },
   { id: 7, url: "/image/08.jpeg", caption: "ไปดูพระอาทิตย์ตกที่ผาสามเหลี่ยม ", rotate: -3 },
