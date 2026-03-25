@@ -141,20 +141,26 @@ export default function BirthdaySwipePage() {
     animate={{ opacity: 1 }}
     className="relative mt-8 md:mt-0 md:absolute md:top-12 text-center z-20 pointer-events-none px-6 font-playpen w-full"
   >
-    <div className="flex flex-col items-center max-w-[90vw] mx-auto">
-      {/* Line 1: Happy Birthday & Anniversary */}
-      <h1 className="text-2xl md:text-4xl font-bold text-zinc-800 italic drop-shadow-sm leading-tight text-center">
-        <TypingText text="Happy Birthday & Our Anniversary" />
+    <div className="flex flex-col items-center max-w-[90vw] mx-auto gap-1 md:gap-2">
+      
+      {/* บรรทัดที่ 1: Happy Birthday & */}
+      <h1 className="text-2xl md:text-5xl font-bold text-zinc-800 italic drop-shadow-sm leading-tight text-center">
+        <TypingText text="Happy Birthday &" />
       </h1>
       
-      {/* Line 2: Duration */}
-      <h1 className="text-xl md:text-4xl font-bold text-pink-400 italic drop-shadow-sm mt-3 text-center">
-        <TypingText text="2 Years & 8 Months Together 💖" delay={3.5} />
+      {/* บรรทัดที่ 2: Our Anniversary (ใส่ delay ต่อจากบรรทัดแรก) */}
+      <h1 className="text-2xl md:text-5xl font-bold text-zinc-800 italic drop-shadow-sm leading-tight text-center">
+        <TypingText text="Our Anniversary" delay={1} />
       </h1>
+      
+      {/* บรรทัดที่ 3: ระยะเวลา (ใส่ delay เพิ่มขึ้นอีก) */}
+      <h1 className="text-xl md:text-4xl font-bold text-pink-400 italic drop-shadow-sm mt-3 text-center">
+        <TypingText text="2 Years & 8 Months Together 💖" delay={2.5} />
+      </h1>
+      
     </div>
   </motion.div>
 )}
-
 {/* --- กองรูปโพลารอยด์ --- */}
 <div className="relative w-full max-w-[320px] md:max-w-[480px] aspect-[1/1.25] mt-10 md:mt-24 z-10 flex items-center justify-center">
   <AnimatePresence>
