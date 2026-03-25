@@ -220,7 +220,7 @@ export default function BirthdaySwipePage() {
       {/* --- ปุ่มเพลง --- */}
       {hasStarted && (
         <button onClick={() => { if (isPlaying) audioRef.current?.pause(); else audioRef.current?.play(); setIsPlaying(!isPlaying); }}
-          className="fixed bottom-10 p-4 bg-white shadow-xl rounded-full text-xl border border-zinc-100 z-50 transition-transform active:scale-90"
+          className="fixed bottom-10 p-4 bg-white shadow-xl rounded-full text-xl border border-zinc-100 z-50 transition-transform active:scale-90 mt-20"
         >
           {isPlaying ? "🎵" : "🔇"}
         </button>
