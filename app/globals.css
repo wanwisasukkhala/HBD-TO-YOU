@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* ตัวแปร --font-playpen จะถูกฉีดมาจาก layout.tsx อัตโนมัติ */
 }
 
 @theme inline {
@@ -10,17 +11,37 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* เพิ่มบรรทัดนี้เพื่อให้ Tailwind v4 รู้จัก font-playpen */
+  --font-playpen: var(--font-playpen);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ... ส่วนที่เหลือเหมือนเดิม ... */
+
+body {
+  /* บังคับใช้ฟอนต์ Playpen เป็นค่าเริ่มต้นของทั้งเว็บ */
+  font-family: var(--font-playpen), cursive;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@layer utilities {
+  .animate-wiggle {
+    animation: wiggle 2s ease-in-out infinite;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes wiggle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); } /* ขยายตัวนิดๆ เหมือนจังหวะหายใจ */
+  25% { transform: rotate(-1deg); }
+  75% { transform: rotate(1deg); }
+}
+
+/* เพิ่มเติม: สำหรับปุ่มที่ดูเหมือนมีคลื่นพลังงาน (Pulse Ring) */
+@keyframes ping-slow {
+  75%, 100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
 }
