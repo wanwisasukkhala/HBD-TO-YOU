@@ -31,9 +31,20 @@ const TypingText = ({ text, delay = 0 }: { text: string; delay?: number }) => {
     },
   };
   const child = {
-    visible: { opacity: 1, y: 0, transition: { type: "spring", damping: 12, stiffness: 200 } },
-    hidden: { opacity: 0, y: 10 },
-  };
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring" as const, // <-- เติม "as const" ตรงนี้เพื่อแก้ Error
+      damping: 12,
+      stiffness: 200,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    y: 10,
+  },
+};
 
   return (
     <motion.div
