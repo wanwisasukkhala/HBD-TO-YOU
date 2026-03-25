@@ -14,7 +14,7 @@ const MEMORIES = [
   { id: 3, url: "/image/02.jpeg", caption: "เกาะสีชังวันนั้น.. 🌊", rotate: -3 },
   { id: 4, url: "/image/01.jpeg", caption: "วาเลนไทน์ของเรา 🌹", rotate: 2 },
   { id: 5, url: "/image/06.jpeg", caption: "ดรีมเวิลด์ด้วยกัน ", rotate: -2 },
-  { id: 6, url: "/image/07.jpeg", caption: "พาอ้วนร่องเรือวันครบรอนและคริสมาส 🌹", rotate: 3 },
+  { id: 6, url: "/image/07.jpeg", caption: "พาอ้วนล่องเรือวันครบรอบและคริสมาส 🌹", rotate: 3 },
   { id: 7, url: "/image/08.jpeg", caption: "ไปดูพระอาทิตย์ตกที่ผาสามเหลี่ยม ", rotate: -3 },
   { id: 8, url: "/image/09.jpeg", caption: "ทะเลหมอก เชียงใหม่ ", rotate: 2 },
   { id: 9, url: "/image/10.jpeg", caption: "เดินป่าผาสามเหลี่ยม เชียงใหม่ ", rotate: -2 },
