@@ -4,7 +4,7 @@ import "./globals.css";
 
 const playpenSans = Playpen_Sans({
   variable: "--font-playpen",
-  subsets: ["latin", "thai"],
+  subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
 });
 
